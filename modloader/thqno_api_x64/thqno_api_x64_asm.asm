@@ -1,0 +1,159 @@
+.code
+extern mProcs:QWORD
+LZ4_compress_wrapper proc
+	jmp mProcs[0*8]
+LZ4_compress_wrapper endp
+LZ4_compressBound_wrapper proc
+	jmp mProcs[1*8]
+LZ4_compressBound_wrapper endp
+LZ4_compress_continue_wrapper proc
+	jmp mProcs[2*8]
+LZ4_compress_continue_wrapper endp
+LZ4_compress_default_wrapper proc
+	jmp mProcs[3*8]
+LZ4_compress_default_wrapper endp
+LZ4_compress_destSize_wrapper proc
+	jmp mProcs[4*8]
+LZ4_compress_destSize_wrapper endp
+LZ4_compress_fast_wrapper proc
+	jmp mProcs[5*8]
+LZ4_compress_fast_wrapper endp
+LZ4_compress_fast_continue_wrapper proc
+	jmp mProcs[6*8]
+LZ4_compress_fast_continue_wrapper endp
+LZ4_compress_fast_extState_wrapper proc
+	jmp mProcs[7*8]
+LZ4_compress_fast_extState_wrapper endp
+LZ4_compress_limitedOutput_wrapper proc
+	jmp mProcs[8*8]
+LZ4_compress_limitedOutput_wrapper endp
+LZ4_compress_limitedOutput_continue_wrapper proc
+	jmp mProcs[9*8]
+LZ4_compress_limitedOutput_continue_wrapper endp
+LZ4_compress_limitedOutput_withState_wrapper proc
+	jmp mProcs[10*8]
+LZ4_compress_limitedOutput_withState_wrapper endp
+LZ4_compress_withState_wrapper proc
+	jmp mProcs[11*8]
+LZ4_compress_withState_wrapper endp
+LZ4_create_wrapper proc
+	jmp mProcs[12*8]
+LZ4_create_wrapper endp
+LZ4_createStream_wrapper proc
+	jmp mProcs[13*8]
+LZ4_createStream_wrapper endp
+LZ4_createStreamDecode_wrapper proc
+	jmp mProcs[14*8]
+LZ4_createStreamDecode_wrapper endp
+LZ4_decompress_fast_wrapper proc
+	jmp mProcs[15*8]
+LZ4_decompress_fast_wrapper endp
+LZ4_decompress_fast_continue_wrapper proc
+	jmp mProcs[16*8]
+LZ4_decompress_fast_continue_wrapper endp
+LZ4_decompress_fast_usingDict_wrapper proc
+	jmp mProcs[17*8]
+LZ4_decompress_fast_usingDict_wrapper endp
+LZ4_decompress_fast_withPrefix64k_wrapper proc
+	jmp mProcs[18*8]
+LZ4_decompress_fast_withPrefix64k_wrapper endp
+LZ4_decompress_safe_wrapper proc
+	jmp mProcs[19*8]
+LZ4_decompress_safe_wrapper endp
+LZ4_decompress_safe_continue_wrapper proc
+	jmp mProcs[20*8]
+LZ4_decompress_safe_continue_wrapper endp
+LZ4_decompress_safe_partial_wrapper proc
+	jmp mProcs[21*8]
+LZ4_decompress_safe_partial_wrapper endp
+LZ4_decompress_safe_usingDict_wrapper proc
+	jmp mProcs[22*8]
+LZ4_decompress_safe_usingDict_wrapper endp
+LZ4_decompress_safe_withPrefix64k_wrapper proc
+	jmp mProcs[23*8]
+LZ4_decompress_safe_withPrefix64k_wrapper endp
+LZ4_freeStream_wrapper proc
+	jmp mProcs[24*8]
+LZ4_freeStream_wrapper endp
+LZ4_freeStreamDecode_wrapper proc
+	jmp mProcs[25*8]
+LZ4_freeStreamDecode_wrapper endp
+LZ4_loadDict_wrapper proc
+	jmp mProcs[26*8]
+LZ4_loadDict_wrapper endp
+LZ4_resetStream_wrapper proc
+	jmp mProcs[27*8]
+LZ4_resetStream_wrapper endp
+LZ4_resetStreamState_wrapper proc
+	jmp mProcs[28*8]
+LZ4_resetStreamState_wrapper endp
+LZ4_saveDict_wrapper proc
+	jmp mProcs[29*8]
+LZ4_saveDict_wrapper endp
+LZ4_setStreamDecode_wrapper proc
+	jmp mProcs[30*8]
+LZ4_setStreamDecode_wrapper endp
+LZ4_sizeofState_wrapper proc
+	jmp mProcs[31*8]
+LZ4_sizeofState_wrapper endp
+LZ4_sizeofStreamState_wrapper proc
+	jmp mProcs[32*8]
+LZ4_sizeofStreamState_wrapper endp
+LZ4_slideInputBuffer_wrapper proc
+	jmp mProcs[33*8]
+LZ4_slideInputBuffer_wrapper endp
+LZ4_uncompress_wrapper proc
+	jmp mProcs[34*8]
+LZ4_uncompress_wrapper endp
+LZ4_uncompress_unknownOutputSize_wrapper proc
+	jmp mProcs[35*8]
+LZ4_uncompress_unknownOutputSize_wrapper endp
+LZ4_versionNumber_wrapper proc
+	jmp mProcs[36*8]
+LZ4_versionNumber_wrapper endp
+LZ4_versionString_wrapper proc
+	jmp mProcs[37*8]
+LZ4_versionString_wrapper endp
+THQNO_Activity_wrapper proc
+	jmp mProcs[38*8]
+THQNO_Activity_wrapper endp
+THQNO_Apps_wrapper proc
+	jmp mProcs[39*8]
+THQNO_Apps_wrapper endp
+THQNO_Chat_wrapper proc
+	jmp mProcs[41*8]
+THQNO_Chat_wrapper endp
+THQNO_Init_wrapper proc
+	jmp mProcs[42*8]
+THQNO_Init_wrapper endp
+THQNO_Matchmaking_wrapper proc
+	jmp mProcs[43*8]
+THQNO_Matchmaking_wrapper endp
+THQNO_Networking_wrapper proc
+	jmp mProcs[44*8]
+THQNO_Networking_wrapper endp
+THQNO_Process_wrapper proc
+	jmp mProcs[45*8]
+THQNO_Process_wrapper endp
+THQNO_RegisterCallback_wrapper proc
+	jmp mProcs[46*8]
+THQNO_RegisterCallback_wrapper endp
+THQNO_RestartAppIfNecessary_wrapper proc
+	jmp mProcs[47*8]
+THQNO_RestartAppIfNecessary_wrapper endp
+THQNO_Shutdown_wrapper proc
+	jmp mProcs[48*8]
+THQNO_Shutdown_wrapper endp
+THQNO_Stats_wrapper proc
+	jmp mProcs[49*8]
+THQNO_Stats_wrapper endp
+THQNO_UnregisterCallback_wrapper proc
+	jmp mProcs[50*8]
+THQNO_UnregisterCallback_wrapper endp
+THQNO_User_wrapper proc
+	jmp mProcs[51*8]
+THQNO_User_wrapper endp
+THQNO_Utils_wrapper proc
+	jmp mProcs[52*8]
+THQNO_Utils_wrapper endp
+end
