@@ -74,6 +74,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>C:\Program Files %28x86%29\Steam\steamapps\common\The Guild 3\</OutDir>
+    <IncludePath>..\PolyHook_2_0;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -81,6 +82,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
+    <IncludePath>..\PolyHook_2_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -103,6 +105,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;THQNO_API_X64_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -137,6 +141,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;THQNO_API_X64_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -157,6 +163,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Guild3Stuff.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PolyHook_2_0\build\ALL_BUILD.vcxproj">
+      <Project>{96745737-cb36-3a7a-a518-63698d8e1b43}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PolyHook_2_0\build\asmjit\asmjit.vcxproj">
+      <Project>{9d4955d0-635c-3a69-8601-5e6f96c84d43}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PolyHook_2_0\build\capstone\capstone-static.vcxproj">
+      <Project>{c05a7c85-ee29-3d54-b9fb-14fcc76437b1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PolyHook_2_0\build\PolyHook_2.vcxproj">
+      <Project>{9265c396-e62b-33df-932e-34197dad900f}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
